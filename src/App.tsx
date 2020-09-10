@@ -1,9 +1,10 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
-function App() {
-  return (
-    <h2>App</h2>
-  );
-}
+import RepositoryList from './components/RepositorytList'
+
+import store from './store';
+
+const App = () => <Provider store={store}> <RepositoryList /> </Provider>;
 
 export default App;
